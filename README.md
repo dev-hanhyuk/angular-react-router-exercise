@@ -91,13 +91,16 @@ app.config(function($stateProvider){
 # 'react-router'
 ## 1. Module install and dependency injection
 ### 1-1. npm install: 
-```npm install --save angular ui-router```<br />
+```npm install --save react-router```<br />
 ### 1-2. Module import
 ```JSX
-//src/App.js
-import Layout from './components/layout';
-import Main from './components/main';
-import Sub from './components/sub';
+//import 'react-router' dependency
+import { Router, Route, hashHistory } from 'react-router';
+
+//import react components
+import Layout from './components/Layout';
+import Main from './components/Main';
+import Sub from './components/Sub';
 ```
 <br />
 
@@ -106,7 +109,7 @@ Nested routes can be set just by nesting it inside another `<Route>`
 
 ```JSX
 const Routes = (
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
         <Route path="/" component={Layout}>
             <Route path="main" component={Main}>
 	        <Route path="sub" component={Sub}/>
@@ -138,7 +141,7 @@ const Main = (props) => (
 # Browser history
 SPA doesn't navigate states(routes) via conventional web browser history. Without '#', the browser requests the page to the server as an actual address, which doesn't exist.
 
-## angular.js: convert hashHistory to browserHistory
+## Convert hashHistory to browserHistory for Angular.js
 ```javascript
 app.config(function ($urlRouterProvider, $locationProvider){
 
@@ -149,3 +152,11 @@ app.config(function ($urlRouterProvider, $locationProvider){
     $urlRouterProvider.otherwise('/');
 });
 ```
+
+## React.js
+React.js supports browser history simply by changing the history property of 'hashHistory' to 'browserHistory'.
+```JSX
+<Router history={browserHistory}><Router>
+```
+
+
