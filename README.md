@@ -33,8 +33,8 @@ Users can update and specifies the browser's URL, and create bookmarks using rou
                             |   [ui-router]                          | 'react-router'
 ----------------------------|----------------------------------------|------------------------------------------
 1-1. Installation | npm install --save angular-ui-router |  npm install --save react-router
-1-2. Load script(in HTML) | ```<script src="path_to_ui_router/angular-ui-router.min.js"></script>```  |  N/A
-1-3. Dependency injection | ```const app = angular.module('name_of_app', ['ui-router'])```  | ```import  { Router, Route, browserHistory } from  'react-router'```
+1-2. Load script(in HTML) | ```<script src="angular-ui-router.min.js"></script>```  |  N/A
+1-3. Dependency injection | ```const app = angular.module('_name_of_app_', ['ui-router'])```  | ```import  { Router, Route, browserHistory } from  'react-router'```
 2. State configuration | $stateProvider | ```<Router>, <Route>```
 3. Link set-up |  ```<a ui-sref="state_name">Goto State</a>```  | ```<Link to="/path_to_link">Goto Link</Link>```
 
@@ -45,9 +45,13 @@ Users can update and specifies the browser's URL, and create bookmarks using rou
 ```npm install --save angular ui-router```<br />
 ### 1-2. Load script file in the HTML body
 ```HTML
-<script src="staticDir/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="_path_to_ui_router_/angular-ui-router/release/angular-ui-router.min.js"></script>
+```
+### 1-3. Dependency injection
+```javascript
+const app = angular.module('_name_of_app_', ['ui-router']);```
 ```
 
-
 ## 2. State config by using $stateProvider service
+
 ## 3. ui-sref
