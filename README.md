@@ -100,8 +100,8 @@ import Sub from './components/sub';
 ```
 <br />
 
-## 2. Route implementation by using <Router> and <Route>
-Nested routes can be set just by nesting it inside another <Route>
+## 2. Route implementation by using `<Router>` and `<Route>`
+Nested routes can be set just by nesting it inside another `<Route>`
 
 ```JSX
 const Routes = (
@@ -117,7 +117,7 @@ const Routes = (
 <br />
 
 
-## 3. <Link> set-up
+## 3. `<Link>` set-up
 ```JSX
 import { Link } from 'react-router';
 
