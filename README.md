@@ -37,8 +37,10 @@ Users can update and specifies the browser's URL, and create bookmarks using rou
 1-3. Dependency injection | ```const app = angular.module('_name_of_app_', ['ui-router'])```  | ```import  { Router, Route, browserHistory } from  'react-router'```
 2. State configuration | $stateProvider | ```<Router>, <Route>```
 3. Link set-up |  ```<a ui-sref="state_name">Goto State</a>```  | ```<Link to="/path_to_link">Goto Link</Link>```
-
 <br />
+
+
+
 # [ui-router]
 ## 1. Module install and dependency injection
 ### 1-1. npm install: 
@@ -73,13 +75,13 @@ app.config(function($stateProvider){
 ```HTML
 <!-- main.html -->
 <div class="Main">
-  <h1>This is Main B</h1>
+    <h1>This is Main B</h1>
     <ul>
-      <li><a ui-sref="main.sub">Sub Page</a></li>
+        <li><a ui-sref="main.sub">Sub Page</a></li>
     </ul>
 
-  <!-- the state refered by ui-sref will replace <ui-view> -->
-  <ui-view></ui-view>
+    <!-- the state refered by ui-sref will replace <ui-view> -->
+    <ui-view></ui-view>
 </div>
 ```
 <br />
@@ -120,13 +122,13 @@ const Routes = (
 import { Link } from 'react-router';
 
 const Main = () => (
-  <div className="Main">
-    <h1>This is Main Page</h1>
-    <ul>
-      <li><Link to="/main/sub">Sub Page</Link></li>
-    </ul>
-    {this.props.children}
-  </div>
+    <div className="Main">
+        <h1>This is Main Page</h1>
+        <ul>
+            <li><Link to="/main/sub">Sub Page</Link></li>
+        </ul>
+        {this.props.children}
+    </div>
 )
 ```
 
