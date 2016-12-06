@@ -82,3 +82,50 @@ app.config(function($stateProvider){
   <ui-view></ui-view>
 </div>
 ```
+<br />
+
+
+# 'react-router'
+## 1. Module install and dependency injection
+### 1-1. npm install: 
+```npm install --save angular ui-router```<br />
+### 1-2. Module import
+```javascript
+//src/App.js
+import Layout from './components/layout';
+import Main from './components/main';
+import Sub from './components/sub';
+```
+<br />
+
+## 2. Route implementation by using <Router> and <Route>
+Nested routes can be set just by nesting it inside another <Route>
+
+```JSX
+const Routes = (
+    <Router history={browserHistory}>
+        <Route path="/" component={Layout}>
+            <Route path="main" component={Main}>
+	        <Route path="sub" component={Sub}/>
+            </Route>
+        </Route>
+    </Router>
+)
+```
+<br />
+## 3. ui-sref
+```HTML
+<!-- main.html -->
+<div class="Main">
+  <h1>This is Main B</h1>
+    <ul>
+      <li><a ui-sref="main.sub">Sub Page</a></li>
+    </ul>
+
+  <!-- the state refered by ui-sref will replace <ui-view> -->
+  <ui-view></ui-view>
+</div>
+```
+
+
+
