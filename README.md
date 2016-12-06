@@ -49,9 +49,22 @@ Users can update and specifies the browser's URL, and create bookmarks using rou
 ```
 ### 1-3. Dependency injection
 ```javascript
-const app = angular.module('_name_of_app_', ['ui-router']);```
+const app = angular.module('_name_of_app_', ['ui-router']);
 ```
 
 ## 2. State config by using $stateProvider service
-
+```javascript
+app.config(function($stateProvider){
+    $stateProvider
+        .state('main', {
+            url: '/main',
+            templateUrl: './components/main/main.template.html' 
+        })
+        //nested state(ui-view)
+        .state('main.sub', {
+            url: '/sub',
+            template: '<h1>This is sub-page</h1>'
+        });
+});
+```
 ## 3. ui-sref
