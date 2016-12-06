@@ -156,6 +156,8 @@ app.config(function ($urlRouterProvider, $locationProvider){
 ## React.js
 React.js supports browser history simply by changing the history property of 'hashHistory' to 'browserHistory'.
 ```JSX
+import { Router, Route, browserHistory } from 'react-router';//hashHistory => browserHistory
+
 <Router history={browserHistory}><Router>
 ```
 
