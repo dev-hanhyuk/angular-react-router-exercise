@@ -11,7 +11,7 @@ Router implementation and comparison between angular.js and react.js
 <br />
 ## SPA(Single Page Application) & Routing frameworks
 ### Single Page Application
-The introduction of AJAX(Asynchronous Javascript And XML) makes it possible for users to experience more dynamic and faster web applications. However, every event happens on a single page, which caused website navigation challenges, such as bookmark and backbutton issues. (Each AJAX request/change on the SPA doesn't affect the web browsers' navigation bar...)
+The introduction of AJAX(Asynchronous Javascript And XML) makes it possible for users to experience more dynamic and faster web applications. However, every event happens on a single page, which caused website navigation challenges, such as bookmark and backbutton issues (Each AJAX request/change on the SPA doesn't affect the web browsers' navigation bar...).
 
 ### Routing frameworks
 Users can update and specifies the browser's URL, and create bookmarks using routing frameworks.
