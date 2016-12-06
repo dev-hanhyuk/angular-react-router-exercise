@@ -24,11 +24,12 @@ Routing frameworks address SPAs' navigation challenge issues. Users can update a
 2. Route(state) set-up, nesting routes
 3. Link to another: <Link to> / <ui-sref>
 
-<br />
-**Use starter kits!**
-<br />
+<br /><br />
+### Use starter kits
 [Angular seed](https://github.com/angular/angular-seed)<br />
 [react-create-app](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html)
+
+<br /><br />
 
 
 
@@ -40,7 +41,7 @@ Routing frameworks address SPAs' navigation challenge issues. Users can update a
 1-3. Dependency injection | ```const app = angular.module('_name_of_app_', ['ui-router'])```  | ```import  { Router, Route, browserHistory } from  'react-router'```
 2. State configuration | $stateProvider | ```<Router>, <Route>```
 3. Link set-up |  ```<a ui-sref="state_name">Goto State</a>```  | ```<Link to="/path_to_link">Goto Link</Link>```
-<br />
+<br /><br />
 
 
 
