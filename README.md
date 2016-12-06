@@ -51,7 +51,7 @@ Users can update and specifies the browser's URL, and create bookmarks using rou
 ```javascript
 const app = angular.module('_name_of_app_', ['ui-router']);
 ```
-
+<br />
 ## 2. State config by using $stateProvider service
 Nested states(ui-view) can be created using '.' separater. 
 
@@ -68,4 +68,17 @@ app.config(function($stateProvider){
         }); //main.sub is a nested state
 });
 ```
+<br />
 ## 3. ui-sref
+```HTML
+<!-- main.html -->
+<div class="Main">
+  <h1>This is Main B</h1>
+    <ul>
+      <li><a ui-sref="main.sub">Sub Page</a></li>
+    </ul>
+
+  <!-- the state refered by ui-sref will replace <ui-view> -->
+  <ui-view></ui-view>
+</div>
+```
