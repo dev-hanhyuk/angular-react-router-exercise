@@ -10,6 +10,11 @@ Router implementation and comparison between angular.js and react.js
 
 <br />
 [Slides: click here to check out the slide presentation](http://slides.com/hanhyukcho/deck-1-2-3#/)
+
+### Use starter kits
+[Angular seed](https://github.com/angular/angular-seed)<br />
+[react-create-app](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html)
+
 <br /><br />
 
 
@@ -25,12 +30,6 @@ Routing frameworks address SPAs' navigation challenge issues. Users can update a
 3. Link to another: <Link to> / <ui-sref>
 
 <br /><br />
-### Use starter kits
-[Angular seed](https://github.com/angular/angular-seed)<br />
-[react-create-app](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html)
-
-<br /><br />
-
 
 
 ## [ui-router] & 'react-router'
