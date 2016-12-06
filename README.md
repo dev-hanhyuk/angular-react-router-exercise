@@ -8,7 +8,7 @@ Router implementation and comparison between angular.js and react.js
 * Implementation process overview: [ui-router] & 'react-router'
 * [ui-router]
 * 'react-router'
-* browserHistory
+* hashHistory/browserHistory
 
 <br />
 # SPA(Single Page Application) & Routing frameworks
@@ -23,7 +23,6 @@ Users can update and specifies the browser's URL, and create bookmarks using rou
 1. Installation and module injection
 2. Route(state) set-up, nesting routes
 3. Link to another: <Link to> / <ui-sref>
-4. Redirect
 
 ## Use starter kits!
 [Angular seed](https://github.com/angular/angular-seed) <br />
@@ -121,16 +120,19 @@ const Routes = (
 ```JSX
 import { Link } from 'react-router';
 
-const Main = () => (
+const Main = (props) => (
     <div className="Main">
         <h1>This is Main Page</h1>
         <ul>
             <li><Link to="/main/sub">Sub Page</Link></li>
         </ul>
-        {this.props.children}
+        {props.children}
     </div>
 )
 ```
+<br />
 
 
+# Browser history
+SPA doesn't navigate states(routes) via conventional web browser history. Without '#', the browser requests the page to the server as an actual address, which doesn't exist.
 
