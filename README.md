@@ -31,5 +31,6 @@ Users can update and specifies the browser's URL, and create bookmarks using rou
                             |   [ui-router]                          | 'react-router'
 ----------------------------|----------------------------------------|------------------------------------------
 1-1. Installation|npm install --save angular-ui-router|npm install --save react-router
-1-2. Load script(in HTML)|```<script src="staticDir/angular-ui-router/release/angular-ui-router.min.js"></script>```| N/A
+1-2. Load script(in HTML)|```<script src="static_dir/angular-ui-router/release/angular-ui-router.min.js"></script>```| N/A
 1-3. Dependency injection|```const app = angular.module('name_of_app', ['ui-router'])```|```import  { Router, Route, browserHistory } from  'react-router'```
+2-1. State configuration|```$stateProvider.state('state_name', { url: '/url', template: './components/state_name/state_name.template.html})```|```<Router history={browserHistory}><Route path="/url" component={component_name}></Route></Router>```
