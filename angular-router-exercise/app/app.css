@@ -1,0 +1,22 @@
+.Layout {
+  background-color: #bbc8d8;
+  font-size: 50px;
+}
+
+
+.Main {
+  background-color: #1fcfcb;
+  font-size: 30px;
+  
+  margin: 30px;
+  padding: 20px;
+}
+
+.Sub {
+  background-color: #313943;
+  font-size: 30px;
+  color: #fff;
+
+  margin: 30px;
+  padding: 20px;
+}
