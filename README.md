@@ -53,6 +53,8 @@ const app = angular.module('_name_of_app_', ['ui-router']);
 ```
 
 ## 2. State config by using $stateProvider service
+###use '.' separater to make nested states(ui-view)
+
 ```javascript
 app.config(function($stateProvider){
     $stateProvider
@@ -60,11 +62,10 @@ app.config(function($stateProvider){
             url: '/main',
             templateUrl: './components/main/main.template.html' 
         })
-        //nested state(ui-view)
         .state('main.sub', {
             url: '/sub',
             template: '<h1>This is sub-page</h1>'
-        });
+        }); //main.sub is a nested state
 });
 ```
 ## 3. ui-sref
