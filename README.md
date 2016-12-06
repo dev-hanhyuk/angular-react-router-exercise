@@ -8,22 +8,29 @@ Router implementation and comparison between angular.js and react.js
 * 'react-router'
 * hashHistory/browserHistory
 
-[Slides: click here to check out the slide presentation](http://slides.com/hanhyukcho/deck-1-2-3#/)
 <br />
+[Slides: click here to check out the slide presentation](http://slides.com/hanhyukcho/deck-1-2-3#/)
+<br /><br />
+
+
 # SPA(Single Page Application) & Routing frameworks
 The introduction of AJAX(Asynchronous Javascript And XML) makes it possible for users to experience more dynamic and faster web applications. However, every event happens on a single page, which caused website navigation challenges, such as bookmark and backbutton issues (Each AJAX request/change on the SPA doesn't affect the web browsers' navigation bar...).
-<br />
+<br /><br />
 Routing frameworks address SPAs' navigation challenge issues. Users can update and specifies the browser's URL, and create bookmarks using routing frameworks.
-
 <br />
+
 # Implementation process overview
 1. Installation and module injection
 2. Route(state) set-up, nesting routes
 3. Link to another: <Link to> / <ui-sref>
 
-## Use starter kits!
-[Angular seed](https://github.com/angular/angular-seed) <br />
+<br />
+**Use starter kits!**
+<br />
+[Angular seed](https://github.com/angular/angular-seed)<br />
 [react-create-app](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html)
+
+
 
 ## [ui-router] & 'react-router'
                             |   [ui-router]                          | 'react-router'
