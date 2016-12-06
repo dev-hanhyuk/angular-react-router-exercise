@@ -27,9 +27,7 @@ Routing frameworks address SPAs' navigation challenge issues. Users can update a
 # Implementation process overview
 1. Installation and module injection
 2. Route(state) set-up, nesting routes
-3. Link to another: <Link to> / <ui-sref>
-
-<br /><br />
+3. Link to another: `<Link to="#">` / `<ui-sref>`
 
 
 ## [ui-router] & 'react-router'
