@@ -41,8 +41,9 @@ Users can update and specifies the browser's URL, and create bookmarks using rou
 <br />
 # [ui-router]
 ## 1. Module install and dependency injection
-1-1. npm install: ```npm install --save angular ui-router```<br />
-1-2. Load script file in the HTML body
+### 1-1. npm install: 
+```npm install --save angular ui-router```<br />
+### 1-2. Load script file in the HTML body
 ```HTML
 <script src="staticDir/angular-ui-router/release/angular-ui-router.min.js"></script>
 ```
