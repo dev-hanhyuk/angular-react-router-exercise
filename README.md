@@ -17,7 +17,7 @@ The introduction of AJAX(Asynchronous Javascript And XML) makes it possible for 
 Users can update and specifies the browser's URL, and create bookmarks using routing frameworks.
 
 <br />
-# Implementation process overall
+# Implementation process overview
 1. Installation and module injection
 2. Route(state) set-up, nesting routes
 3. Link to another: <Link to> / <ui-sref>
