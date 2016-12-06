@@ -1,8 +1,6 @@
 # Simple router implementation of angular.js and react.js
 Router implementation and comparison between angular.js and react.js
 
-[Slides: click here to check out the slide presentation](http://slides.com/hanhyukcho/deck-1-2-3#/)
-
 ### Contents
 * SPA(Single Page Application) & Routing frameworks
 * Implementation process overview: [ui-router] & 'react-router'
@@ -10,13 +8,12 @@ Router implementation and comparison between angular.js and react.js
 * 'react-router'
 * hashHistory/browserHistory
 
+[Slides: click here to check out the slide presentation](http://slides.com/hanhyukcho/deck-1-2-3#/)
 <br />
 # SPA(Single Page Application) & Routing frameworks
-## Single Page Application
 The introduction of AJAX(Asynchronous Javascript And XML) makes it possible for users to experience more dynamic and faster web applications. However, every event happens on a single page, which caused website navigation challenges, such as bookmark and backbutton issues (Each AJAX request/change on the SPA doesn't affect the web browsers' navigation bar...).
-
-## Routing frameworks
-Users can update and specifies the browser's URL, and create bookmarks using routing frameworks.
+<br />
+Routing frameworks address SPAs' navigation challenge issues. Users can update and specifies the browser's URL, and create bookmarks using routing frameworks.
 
 <br />
 # Implementation process overview
