@@ -90,7 +90,7 @@ app.config(function($stateProvider){
 ### 1-1. npm install: 
 ```npm install --save angular ui-router```<br />
 ### 1-2. Module import
-```javascript
+```JSX
 //src/App.js
 import Layout from './components/layout';
 import Main from './components/main';
@@ -113,18 +113,21 @@ const Routes = (
 )
 ```
 <br />
-## 3. ui-sref
-```HTML
-<!-- main.html -->
-<div class="Main">
-  <h1>This is Main B</h1>
-    <ul>
-      <li><a ui-sref="main.sub">Sub Page</a></li>
-    </ul>
 
-  <!-- the state refered by ui-sref will replace <ui-view> -->
-  <ui-view></ui-view>
-</div>
+
+## 3. <Link> set-up
+```JSX
+import { Link } from 'react-router';
+
+const Main = () => (
+  <div className="Main">
+    <h1>This is Main Page</h1>
+    <ul>
+      <li><Link to="/main/sub">Sub Page</Link></li>
+    </ul>
+    {this.props.children}
+  </div>
+)
 ```
 
 
