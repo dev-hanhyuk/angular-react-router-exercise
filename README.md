@@ -53,7 +53,7 @@ const app = angular.module('_name_of_app_', ['ui-router']);
 ```
 
 ## 2. State config by using $stateProvider service
-###use '.' separater to make nested states(ui-view)
+Nested states(ui-view) can be created using '.' separater. 
 
 ```javascript
 app.config(function($stateProvider){
