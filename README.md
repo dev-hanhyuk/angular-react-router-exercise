@@ -138,3 +138,14 @@ const Main = (props) => (
 # Browser history
 SPA doesn't navigate states(routes) via conventional web browser history. Without '#', the browser requests the page to the server as an actual address, which doesn't exist.
 
+## angular.js: convert hashHistory to browserHistory
+```javascript
+app.config(function ($urlRouterProvider, $locationProvider){
+
+    // This turns off hashbang urls (/#about) and changes it to something normal (/about)
+    $locationProvider.html5Mode(true);
+
+    // If we go to a URL that ui-router doesn't have registered, go to the "/" url.
+    $urlRouterProvider.otherwise('/');
+});
+```
