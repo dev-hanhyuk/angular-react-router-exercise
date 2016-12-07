@@ -45,7 +45,7 @@ Routing frameworks address SPAs' navigation challenge issues. Users can update a
 # [ui-router]
 ## 1. Module install and dependency injection
 ### 1-1. npm install: 
-```npm install --save angular ui-router```<br />
+```npm install --save angular-ui-router```<br />
 ### 1-2. Load script file in the HTML body
 ```HTML
 <script src="_path_to_ui_router_/angular-ui-router/release/angular-ui-router.min.js"></script>
